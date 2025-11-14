@@ -126,6 +126,7 @@
 # # Faqat joriy setni chop qilish uchun hech qanday metod ishlatmaymiz
 # print("10-vazifa natijasi:", colors)  # Natija: {'blue', 'yellow'}
 # 3
+
 # students = {'Ali', 'Vali', 'Sami'}
 # result1 = students.add("Aziz")
 # print("1-vazifa natijasi:", students)
@@ -171,129 +172,325 @@
 # print("10-vazifa natijasi:", result19)
 # print("11-vazifa natijasi:", more_nums)
 # # 5
-# animals = {'cat', 'dog', 'fish'}
-# result20 = animals.add("rabbit")
-# print("1-vazifa natijasi:", animals)
-# result21 = animals.remove("dog")
-# print("2-vazifa natijasi:", animals)
-# result22 = "parrot" in animals
-# print("3-vazifa natijasi:", result22)
-# result23 = animals.add("parrot")
-# print("4-vazifa natijasi:", animals)
-# more_animals = {'cat', 'lion'}
-# print("5-vazifa natijasi:", more_animals)
-# result24 = more_animals.update(animals)
-# print("6-vazifa natijasi:", result24)
-# result25 = animals.difference(more_animals)
-# print("7-vazifa natijasi:", result25)
-# result26 = sorted(animals)
-# print("8-vazifa natijasi:", result26)
-# result27 = len(animals)
-# print("9-vazifa natijasi:", result27)
-# print("10-vazifa natijasi:", animals)
-# # 6
-# cart = {'milk', 'bread', 'cheese'}
-# result28 = cart.add("butter")
-# print("1-vazifa natijasi:", cart)
-# result29 = cart.remove("milk")
-# print("2-vazifa natijasi:", cart)
-# result30 = "jam" in cart
-# print("3-vazifa natijasi:", cart)
-# result31 = cart.add("jam")
-# print("4-vazifa natijasi:", cart)
-# new_items = {"bred" , "yogurt"}
-# print("5-vazifa natijasi:", new_items)
-# result32 = cart.update(new_items)
-# print("6-vazifa natijasi:", result32)
-# result33 = cart.difference(new_items)
-# print("7-vazifa natijasi:", result33)
-# result34 = cart.intersection(new_items)
-# print("8-vazifa natijasi:", result34)
-# result35 = bool(cart)
-# print("9-vazifa natijasi:", result35)
-# print("10-vazifa natijasi:", cart)
-# # 7
-# subjects = {'Math', 'Physics'}
-# result36 = subjects.add("Biology")
-# print("1-vazifa natijasi:", subjects)
-# result37 = subjects.discard("Math")
-# print("2-vazifa natijasi:", subjects)
-# result38 = "Chemistry" in subjects
-# print("3-vazifa natijasi:", result38)
-# result39 = subjects.add("Chemistry")
-# print("4-vazifa natijasi:", subjects)
-# extra = {"History" , "Physics"}
-# print("5-vazifa natijasi:", extra)
-# result40 = subjects.union(extra)
-# print("6-vazifa natijasi:", result40)
-# subjects_copy = subjects.copy()
-# print("7-vazifa natijasi:", subjects_copy)
-# result41 = subjects_copy.add("Geography")
-# print("8-vazifa natijasi:", result41)
-# result42 = subjects.symmetric_difference(subjects_copy)
-# print("9-vazifa natijasi:", result42)
-# print("10-vazifa natijasi:", subjects)
-# # 8
-# cities = {'Tashkent', 'Samarkand'}
-# result43 = cities.add("Bukhara")
-# print("1-vazifa natijasi:", cities)
-# result44 = cities.remove("Samarkand")
-# print("2-vazifa natijasi:", cities)
-# result45 = "Khiva" in cities
-# print("3-vazifa natijasi:", result45)
-# uzbek_cities = {"Andijon" , "Namangan" , "Tashkent"}
-# print("4-vazifa natijasi:", uzbek_cities)
-# result46 = cities.difference(uzbek_cities)
-# print("5-vazifa natijasi:", result46)
-# result47 = cities.intersection(uzbek_cities)
-# print("6-vazifa natijasi:", result47)
-# result48 = sorted(cities)
-# print("7-vazifa natijasi:", cities)
-# result49 = len(cities)
-# print("8-vazifa natijasi:", result49)
-# print("9-vazifa natijasi:", cities)
-# # 9
-# brands = {'Nike', 'Adidas'}
-# result50 = brands.add("Puma")
-# print("1-vazifa natijasi:", brands)
-# result51 = brands.discard("Adidas")
-# print("2-vazifa natijasi:", brands)
-# result52 = "Reebok" in brands
-# print("3-vazifa natijasi:", result52)
-# result53 = brands.add("Reebok")
-# print("4-vazifa natijasi:", brands)
-# local_brands = {'Nike', 'Sabr'}
-# print("5-vazifa natijasi:", local_brands)
-# result54 = brands.union(local_brands)
-# print("6-vazifa natijasi:", result53)
-# result55 = brands.difference(local_brands)
-# print("7-vazifa natijasi:", result54)
-# brands_copy = brands.copy()
-# print("8-vazifa natijasi:", brands_copy)
-# result56 = brands_copy.clear()
-# print("9-vazifa natijasi:", brands_copy)
-# print("10-vazifa natijasi:", brands)
-# # 10
-# books = {'1984', 'Hamlet', 'Inferno'}
-# result57 = books.add("Animal Farm")
-# print("1-vazifa natijasi:", books)
-# result58 = books.remove("Inferno")
-# print("2-vazifa natijasi:", books)
-# result59 = "Hamlet" in books
-# print("3-vazifa natijasi:", result59)
-# result60 = books.add("Fahrenheit 451")
-# print("4-vazifa natijasi:", books)
-# new_books = {'1984', 'Dune'}
-# print("5-vazifa natijasi:", new_books)
-# result61 = books.update(new_books)
-# print("6-vazifa natijasi:", result61)
-# result62 = books.difference(new_books)
-# print("7-vazifa natijasi:", result62)
-# result64 = books.intersection(new_books)
-# print("8-vazifa natijasi:", result64)
-# result65 = sorted(books)
-# print("9-vazifa natijasi:", books)
-# print("10-vazifa natijasi:", books)
+animals = {'cat', 'dog', 'fish'}
+result20 = animals.add("rabbit")
+print("1-vazifa natijasi:", animals)
+result21 = animals.remove("dog")
+print("2-vazifa natijasi:", animals)
+result22 = "parrot" in animals
+print("3-vazifa natijasi:", result22)
+result23 = animals.add("parrot")
+print("4-vazifa natijasi:", animals)
+more_animals = {'cat', 'lion'}
+print("5-vazifa natijasi:", more_animals)
+result24 = more_animals.update(animals)
+print("6-vazifa natijasi:", result24)
+result25 = animals.difference(more_animals)
+print("7-vazifa natijasi:", result25)
+result26 = sorted(animals)
+print("8-vazifa natijasi:", result26)
+result27 = len(animals)
+print("9-vazifa natijasi:", result27)
+print("10-vazifa natijasi:", animals)
+# 6
+cart = {'milk', 'bread', 'cheese'}
+result28 = cart.add("butter")
+print("1-vazifa natijasi:", cart)
+result29 = cart.remove("milk")
+print("2-vazifa natijasi:", cart)
+result30 = "jam" in cart
+print("3-vazifa natijasi:", cart)
+result31 = cart.add("jam")
+print("4-vazifa natijasi:", cart)
+new_items = {"bred" , "yogurt"}
+print("5-vazifa natijasi:", new_items)
+result32 = cart.update(new_items)
+print("6-vazifa natijasi:", result32)
+result33 = cart.difference(new_items)
+print("7-vazifa natijasi:", result33)
+result34 = cart.intersection(new_items)
+print("8-vazifa natijasi:", result34)
+result35 = bool(cart)
+print("9-vazifa natijasi:", result35)
+print("10-vazifa natijasi:", cart)
+# 7
+subjects = {'Math', 'Physics'}
+result36 = subjects.add("Biology")
+print("1-vazifa natijasi:", subjects)
+result37 = subjects.discard("Math")
+print("2-vazifa natijasi:", subjects)
+result38 = "Chemistry" in subjects
+print("3-vazifa natijasi:", result38)
+result39 = subjects.add("Chemistry")
+print("4-vazifa natijasi:", subjects)
+extra = {"History" , "Physics"}
+print("5-vazifa natijasi:", extra)
+result40 = subjects.union(extra)
+print("6-vazifa natijasi:", result40)
+subjects_copy = subjects.copy()
+print("7-vazifa natijasi:", subjects_copy)
+result41 = subjects_copy.add("Geography")
+print("8-vazifa natijasi:", result41)
+result42 = subjects.symmetric_difference(subjects_copy)
+print("9-vazifa natijasi:", result42)
+print("10-vazifa natijasi:", subjects)
+# 8
+cities = {'Tashkent', 'Samarkand'}
+result43 = cities.add("Bukhara")
+print("1-vazifa natijasi:", cities)
+result44 = cities.remove("Samarkand")
+print("2-vazifa natijasi:", cities)
+result45 = "Khiva" in cities
+print("3-vazifa natijasi:", result45)
+uzbek_cities = {"Andijon" , "Namangan" , "Tashkent"}
+print("4-vazifa natijasi:", uzbek_cities)
+result46 = cities.difference(uzbek_cities)
+print("5-vazifa natijasi:", result46)
+result47 = cities.intersection(uzbek_cities)
+print("6-vazifa natijasi:", result47)
+result48 = sorted(cities)
+print("7-vazifa natijasi:", cities)
+result49 = len(cities)
+print("8-vazifa natijasi:", result49)
+print("9-vazifa natijasi:", cities)
+# 9
+brands = {'Nike', 'Adidas'}
+result50 = brands.add("Puma")
+print("1-vazifa natijasi:", brands)
+result51 = brands.discard("Adidas")
+print("2-vazifa natijasi:", brands)
+result52 = "Reebok" in brands
+print("3-vazifa natijasi:", result52)
+result53 = brands.add("Reebok")
+print("4-vazifa natijasi:", brands)
+local_brands = {'Nike', 'Sabr'}
+print("5-vazifa natijasi:", local_brands)
+result54 = brands.union(local_brands)
+print("6-vazifa natijasi:", result53)
+result55 = brands.difference(local_brands)
+print("7-vazifa natijasi:", result54)
+brands_copy = brands.copy()
+print("8-vazifa natijasi:", brands_copy)
+result56 = brands_copy.clear()
+print("9-vazifa natijasi:", brands_copy)
+print("10-vazifa natijasi:", brands)
+# 10
+books = {'1984', 'Hamlet', 'Inferno'}
+result57 = books.add("Animal Farm")
+print("1-vazifa natijasi:", books)
+result58 = books.remove("Inferno")
+print("2-vazifa natijasi:", books)
+result59 = "Hamlet" in books
+print("3-vazifa natijasi:", result59)
+result60 = books.add("Fahrenheit 451")
+print("4-vazifa natijasi:", books)
+new_books = {'1984', 'Dune'}
+print("5-vazifa natijasi:", new_books)
+result61 = books.update(new_books)
+print("6-vazifa natijasi:", result61)
+result62 = books.difference(new_books)
+print("7-vazifa natijasi:", result62)
+result64 = books.intersection(new_books)
+print("8-vazifa natijasi:", result64)
+result65 = sorted(books)
+print("9-vazifa natijasi:", books)
+print("10-vazifa natijasi:", books)
+# 11
+invited = {'Ali', 'Vali', 'Salim'}
+arrived = {'Vali', 'Sami'}
+result66 = invited.add("Aziza")
+print("1-vazifa natijasi:", invited)
+result67 = invited.intersection(arrived)
+print("2-vazifa natijasi:", result67)
+result68 = invited.difference(arrived)
+print("3-vazifa natijasi:", result68)
+result69 = invited.union(arrived)
+print("4-vazifa natijasi:", result69)
+result70 = invited.clear()
+print("5-vazifa natijasi:", invited)
+result71 = arrived.discard("Sami")
+print("6-vazifa natijasi:", arrived)
+result72 = arrived.add("Sardor")
+print("7-vazifa natijasi:", arrived)
+result73 = invited.difference(arrived)
+print("8-vazifa natijasi:", result73)
+result74 = len(arrived)
+print("9-vazifa natijasi:", result74)
+print("10-vazifa natijasi:", invited)
+print("11-vazifa natijasi:", arrived)
+# 12
+udemy = {'Alisher', 'Dilshod', 'Malika'}
+coursera = {'Malika', 'Zafar'}
+result75 = udemy.add("Shahnoza")
+print("1-vazifa natijasi:", udemy)
+result76 = udemy.intersection(coursera)
+print("2-vazifa natijasi:", result76)
+result77 = coursera.difference(udemy)
+print("3-vazifa natijasi:", result77)
+result78 = coursera.union(udemy)
+print("4-vazifa natijasi:", result78)
+udemy_copy = udemy.copy()
+print("5-vazifa natijasi:", udemy_copy)
+result79 = udemy_copy.discard("Dilshod")
+print("6-vazifa natijasi:", udemy_copy)
+result80 = udemy.difference(coursera)
+print("7-vazifa natijasi:", result80)
+result81 = sorted(udemy)
+print("8-vazifa natijasi:", udemy)
+result82 = len(udemy)
+result83 = len(coursera)
+print("9-vazifa natijasi:", result82)
+print("10-vazifa natijasi:", result83)
+print("11-vazifa natijasi:", udemy)
+print("12-vazifa natijasi:", coursera)
+print("13-vazifa natijasi:", udemy_copy)
+# 13
+it_vacancy = {'Azamat', 'Javlon', 'Sarvar'}
+design_vacancy = {'Javlon', 'Sabrina'}
+result84 = it_vacancy.add("Komila")
+print("1-vazifa natijasi:", it_vacancy)
+result85 = it_vacancy.difference(design_vacancy)
+print("2-vazifa natijasi:", result85)
+result86 = it_vacancy.intersection(design_vacancy)
+print("3-vazifa natijasi:", result86)
+result87 = it_vacancy.symmetric_difference(design_vacancy)
+print("4-vazifa natijasi:", result87)
+result89 = it_vacancy.union(design_vacancy)
+print("5-vazifa natijasi:", result89)
+union_copy = result89.copy()
+print("6-vazifa natijasi:", union_copy)
+result90 = union_copy.discard("Sarvar")
+print("7-vazifa natijasi:", union_copy)
+result91 = it_vacancy.difference(design_vacancy)
+print("8-vazifa natijasi:", result91)
+result92 = len(it_vacancy)
+result93 = len(design_vacancy)
+print("9-vazifa natijasi:", result92)
+print("10-vazifa natijasi:", result93)
+result94 = sorted(it_vacancy)
+result95 = sorted(design_vacancy)
+print("11-vazifa natijasi:", result94)
+print("12-vazifa natijasi:", result95)
+# 14
+students = {'Ali', 'Soliha', 'Bobur'}
+checked = {'Bobur', 'Ali'}
+result96 = checked.add("Gulbahor")
+print("1-vazifa natijasi:", checked)
+result97 = students.difference(checked)
+print("2-vazifa natijasi:", result97)
+print("3-vazifa natijasi:", checked)
+result98 = checked.union(students)
+print("4-vazifa natijasi:", result98)
+result99 = len(checked)
+print("5-vazifa natijasi:", result99)
+result_copy =result98.copy()
+result100 = result_copy.discard("Ali")
+print("6-vazifa natijasi:", result_copy)
+result101 = students.symmetric_difference(checked)
+print("7-vazifa natijasi:", result101)
+result102 = len(students)
+result103 = len(checked)
+print("8-vazifa natijasi:", result102)
+print("9-vazifa natijasi:", result103)
+result104 = students.intersection(checked)
+print("10-vazifa natijasi:", result104)
+# 15
+toshkent_trip = {'Olim', 'Rustam', 'Ziyoda'}
+samarkand_trip = {'Ziyoda', 'Kamola'}
+result105 = toshkent_trip.add("Nodira")
+print("1-vazifa natijasi:", toshkent_trip)
+result106 = toshkent_trip.intersection(samarkand_trip)
+print("2-vazifa natijasi:", result106)
+result107 = toshkent_trip.difference(samarkand_trip)
+print("3-vazifa natijasi:", result107)
+result108= toshkent_trip.union(samarkand_trip)
+print("4-vazifa natijasi:", result108)
+result109 = toshkent_trip.symmetric_difference(samarkand_trip)
+print("5-vazifa natijasi:", result109)
+result110 = toshkent_trip.discard("Ziyoda")
+print("6-vazifa natijasi:", toshkent_trip)
+copy_set = toshkent_trip.copy()
+copy_clear = copy_set.clear()
+print("7-vazifa natijasi:", copy_set)
+result111 = len(toshkent_trip)
+result112 = len(samarkand_trip)
+print("8-vazifa natijasi:", result111)
+print("9-vazifa natijasi:", result112)
+result113 = sorted(toshkent_trip)
+result114= sorted(samarkand_trip)
+print("10-vazifa natijasi", result113)
+print("11-vazifa natijasi:", result114)
+#16
+online_orders = {'Ulugbek', 'Shoira', 'Ibrohim'}
+cash_orders = {'Ibrohim', 'Dilshod'}
+result125 = online_orders.add("Muzaffar")
+print("1-vazifa natijasi:", online_orders)
+result126 = cash_orders.difference(online_orders)
+print("2-vazifa natijasi:", result126)
+result127 = online_orders.intersection(cash_orders)
+print("3-vazifa natijasi:", result127)
+result128 = online_orders.symmetric_difference(cash_orders)
+print("4-vazifa natijasi:", result128)
+result129 = sorted(online_orders.union(cash_orders))
+print("5-vazifa natijasi:", result129)
+copy_set3 = online_orders.copy()
+print("6-vazifa natijasi:", copy_set3)
+result130 = copy_set3.clear()
+print("7-vazifa natijasi:", copy_set3)
+result131= len(online_orders)
+result132 = len(cash_orders)
+print("8-vazifa natijasi:", result130)
+print("9-vazifa natijasi:", result131)
+result133 = cash_orders.discard("Dilshod")
+print("10-vazifa natijasi:", cash_orders)
+#17
+football = {'Otabek', 'Ali'}
+basketball = {'Ali', 'Javohir'}
+result134 = football.add("Farrux")
+print("1-vazifa natijasi:", football)
+result135 = football.intersection(basketball)
+print("2-vazifa natijasi:", result134)
+result136 = football.difference(basketball)
+print("3-vazifa natijasi:", result135)
+result137 = basketball.difference(football)
+print("4-vazifa natijasi:", result136)
+result138 = football.union(basketball)
+print("5-vazifa natijasi:", result137)
+result139 = football.symmetric_difference(basketball)
+print("6-vazifa natijasi:", result138)
+result140= football.discard("Ali")
+print("7-vazifa natijasi:", football)
+basket_copy = basketball.copy()
+print("8-vazifa natijasi:", basket_copy)
+result141 = basket_copy.clear()
+print("9-vazifa natijasi:", basket_copy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
